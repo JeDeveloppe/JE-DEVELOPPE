@@ -1,0 +1,176 @@
+.img-thumbnail {
+  width: 70%;
+  margin: auto;
+}
+
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #ecf0f1;
+  background-color: #212327;
+}
+
+.cookiealert.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookiealert a {
+  text-decoration: underline;
+}
+
+.cookiealert .acceptcookies {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+.cursor-alias {
+  cursor: alias;
+}
+
+.clip-path {
+  clip-path: polygon(2% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.alertDiv {
+  z-index: 1;
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+  -webkit-animation-name: magic;
+  animation-name: magic;
+  -webkit-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes magic {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes magic {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.divImgCompetences {
+  //image
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  background: transparent;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.btnRealisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 1s box-shadow;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.966);
+  background: #fff;
+  text-decoration: none;
+  color: black;
+}
+
+.btnRealisation:hover {
+  box-shadow: 0 5px 35px 0 #3498db;
+}
+
+.btnRealisation:hover::before,
+.btnRealisation:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #375a7f;
+  border-radius: 5px;
+  animation: 1s jiggle infinite;
+}
+.btnRealisation:hover::after {
+  background: #3498db;
+  animation: 0.5s jiggle infinite;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translate(-2px, -2px);
+  }
+  14% {
+    transform: translate(0px, -2px);
+  }
+  28% {
+    transform: translate(2px, -2px);
+  }
+  42% {
+    transform: translate(2px, 0px);
+  }
+  57% {
+    transform: translate(2px, 2px);
+  }
+  71% {
+    transform: translate(0px, 2px);
+  }
+  85% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(-5px, 0px);
+  }
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.rotateDown:hover {
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transform: rotate(45deg);
+  transform-origin: 50% 60%;
+}

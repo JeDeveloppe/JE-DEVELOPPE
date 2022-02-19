@@ -1,0 +1,8 @@
+# Pour tous les robots interdiction de scroller les dossiers suivant
+
+User-agent: *
+    Disallow: /fontawesome/
+    Disallow: /README.md
+
+Sitemap: https://www.je-developpe.fr/sitemap.xml
+

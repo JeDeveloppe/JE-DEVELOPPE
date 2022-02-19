@@ -1,0 +1,16 @@
+# Pour tous les robots interdiction de scroller les dossiers suivant
+User-agent: *
+Disallow: /bdd/
+Disallow: /captcha/
+Disallow: /commun/
+Disallow: /contact/verifFormContact.php
+Disallow: /controles/
+Disallow: /erreurs/
+Disallow: /fontawesome/
+Disallow: /PHPMailer/
+Disallow: /publicites/
+Disallow: /config.php
+Disallow: /README.md
+
+Sitemap: https://www.je-developpe.fr/sitemap.xml
+
