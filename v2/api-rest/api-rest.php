@@ -68,7 +68,8 @@
                 <?php
                     date_default_timezone_set('Europe/Paris');
                     //url de destination
-                    $weatherApiKey = "e3fe1defe2e5801b4cd9294766a7291a";
+
+                    $weatherApiKey = $GLOBALS['weatherApiKey'];
                     $url = 'http://api.openweathermap.org/data/2.5/weather?q=strasbourg,fr&appid='.$weatherApiKey.'&lang=fr&units=metric';
 
                     //initialisation de la connexion

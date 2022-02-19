@@ -46,6 +46,8 @@
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <?php 
+                require_once("./config.php");
+
                 //message de confirmation ou non de la prise de contact
                 require_once('message-flash.php');
               

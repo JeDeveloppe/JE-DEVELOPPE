@@ -22,7 +22,7 @@ $languages = [
         '<i class="fab fa-php color-php"></i>','success',85
     ],
     [
-        '<i class="fab fa-symfony color-symfony"></i>','warning',50
+        '<i class="fab fa-symfony color-symfony"></i>','warning',65
     ],
     [
         '<i class="fab fa-vuejs text-success"></i>','danger',35
