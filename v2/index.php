@@ -67,7 +67,7 @@
 
                 require_once('./contact/contact.php');
 
-                require_once('./bottom/bottom.php');
+                require_once('./footer/footer.php');
             ?>
 
         </div>

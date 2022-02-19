@@ -1,9 +1,8 @@
 <section class="resume-section-bottom">
     <div class="resume-section-content container text-center mb-2">
         <?php
-            $url = $_SERVER['REQUEST_URI'];
-            $urlPropre = str_replace(array("?","="),"_",$url);
-            $Xitipage = substr($urlPropre, 1);
+            //page unique pas besoin de modifier l'url
+            $Xitipage = $_SERVER['REQUEST_URI'];
         ?>
         <a href="http://www.xiti.com/xiti.asp?s=617637" title="WebAnalytics" target="_top">
             <script type="text/javascript">
