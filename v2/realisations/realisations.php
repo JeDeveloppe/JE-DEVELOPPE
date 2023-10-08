@@ -1,22 +1,6 @@
 <?php
 $realisations = [
     [
-        "Exemple d'une e-boutique",
-        "Depuis Mai 2021",
-        80,
-        "/images/projets/exempleBoulangerie.png",
-        "logo de la boutique",
-        'Venez jetez un oeil ou les deux ! <i class="fas text-warning fa-smile-wink"></i>',
-        "Pour maintenir mes connaissances, j'ai  construit une boutique en ligne sur le thème de la boulangerie... Avec tout un espace administrateur qui permet de gérer la E-boutique en live !",
-        "https://exemple-eboutique.je-developpe.fr/",
-        '<i class="m-2 fab fa-3x fa-html5 color-html5"></i>
-        <i class="m-2 fab fa-3x fa-css3-alt color-css3"></i>
-        <i class="m-2 fab fa-3x fa-js-square color-javascript"></i>
-        <i class="m-2 fab fa-3x fa-bootstrap color-bootstrap"></i>
-        <i class="m-2 fab fa-3x fa-php color-php"></i>
-        <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/>'
-    ],
-    [
         "Refaites vos jeux",
         "Depuis Décembre 2020",
         100,
@@ -30,7 +14,8 @@ $realisations = [
         <i class="m-2 fab fa-3x fa-js-square color-javascript"></i>
         <i class="m-2 fab fa-3x fa-bootstrap color-bootstrap"></i>
         <i class="m-2 fab fa-3x fa-php color-php"></i>
-        <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/>'
+        <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/>',
+        "https://www.refaitesvosjeux.fr/github/presentation-backend.html"
     ]
 ];
 ?>
@@ -47,7 +32,11 @@ $realisations = [
                     <div class="subheading mb-3">'.$realisation[5].'</div>
                     <p>'.$realisation[6].'</p>
                     <p class="col-12 d-flex justify-content-around mb-4">'.$realisation[8].'</p>
-                    <p class="col-12 text-center"><a class="text-decoration-none" href="'.$realisation[7].'" target="_blank"><i class="fas fa-location-arrow"></i> Voir le site</a></p>
+                    <p class="col-12 text-center"><a class="text-decoration-none" href="'.$realisation[7].'" target="_blank"><i class="fas fa-location-arrow"></i> Voir le site</a></p>';
+                    if(isset($realisation[9])){
+                        echo '<p class="col-12 text-center"><a class="text-decoration-none" href="'.$realisation[9].'" target="_blank"><i class="fas fa-location-arrow"></i> Présentation rapide du backend</a></p>';
+                    }
+                    echo '
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">'.$realisation[1].'</span></div>
             </div>';
