@@ -23,7 +23,7 @@
             </noscript>
         </a>
         <div class="col-12 text-center small">
-            2020 - 2022
+            2020 - <?php echo $date; ?>
         </div>
     </div>
 </section>
